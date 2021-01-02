@@ -1,11 +1,25 @@
+/* Universal Styles */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: white;
+    font-family: "Roboto", sans-serif;
 }
+
+
+.image-container {
+    overflow: hidden;
+}
+
+.image-container img {
+    display: block;
+    max-width: 100%;
+}
+
+/*Header Section*/
 
 li a {
     font-family: "Roboto", sans-serif;
@@ -18,7 +32,7 @@ li a {
 .container {
     padding-top: 12px;
     display: grid;
-    grid-template-columns: 70px 200px 1250px;
+    grid-template-columns: 70px 250px 1200px;
     justify-content: left;
     align-items: center;
 }
@@ -29,9 +43,15 @@ li a {
     width: 70px;
 }
 
-p {
+.text {
     grid-column-start: 2;
     align-self: auto;
+    color: rgb(24, 23, 23) 
+}
+
+span {
+    color: rgb(110, 109, 109);
+    font-weight: 100;
 }
 
 .nav_links {
@@ -47,3 +67,66 @@ p {
     padding: 10px;
 }
 
+/*Landing Area*/
+
+#banner-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    background-color: #a39e9e;
+  }
+
+  .banner {
+    flex: 1;
+    margin: 0 24px;
+    background-color: rgb(0, 67, 250);
+  }
+
+  .banner .image-container {
+    width: 800px;
+    height:65%;
+    margin: 0 auto;
+    background-color: green;
+  }
+
+  .feature .content {
+    padding: 2.5rem 0;
+  }
+
+  h1 {
+      font-size: 58px;
+      color: rgb(51, 50, 50);
+      font-weight: bold;
+      margin-top: 8rem;
+      margin-left: 24px;
+    }  
+
+  .banner2 {
+    flex: 1;
+  }
+
+  p {
+      font-size: 28px;
+      font-weight: bold;
+      color: rgb(51, 50, 50);
+      margin-left: 24px;
+      margin-top: 18px;
+    }
+
+  .start-container {
+      display: flex;
+      margin-left: 24px;
+      margin-top: 24px;
+      width: 425px;
+      height: 75px;
+      background-color: rgb(51, 50, 50);
+      color: white;
+      text-align: center;
+      justify-content: center;
+    }
+
+   .btn {
+      font-size: 24px;
+      margin-top: 23px;
+      margin-bottom: 8px;
+  }
