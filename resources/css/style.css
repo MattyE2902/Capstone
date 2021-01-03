@@ -4,7 +4,7 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin: 0px 9px;
     padding: 0;
     font-family: "Roboto", sans-serif;
     max-width: 99%;
@@ -33,7 +33,7 @@ li a {
 .container {
     padding-top: 12px;
     display: grid;
-    grid-template-columns: 70px 250px 1200px;
+    grid-template-columns: 70px 250px 1140px;
     justify-content: left;
     align-items: center;
 }
@@ -46,7 +46,7 @@ li a {
 
 .text {
     grid-column-start: 2;
-    margin-left: 0;
+    margin-left: 5px;
     margin-top: 0;
     color: rgb(24, 23, 23) 
 }
@@ -61,7 +61,7 @@ li a {
     display: inline;
     list-style: none;
     float: right;
-    margin-right: 24px;
+    margin-right: -38px;
 }
 
 .nav_links li {
@@ -87,7 +87,7 @@ li a {
     width: 800px;
     height:65%;
     margin: 0 auto;
-    background-color: green;
+    background-color: #a39e9e;
   }
 
   .feature .content {
@@ -148,7 +148,7 @@ li a {
   /* Middle Section */
 
   #middle-box {
-      background-color: white;
+      background-color: aliceblue;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(3, 1fr);
@@ -163,7 +163,7 @@ li a {
   .top-container {
       height: 200px;
       width: 600px;
-      margin: 24px 0 24px 24px;
+      margin: 33px 0 24px 24px;
       display: flex;
       align-items: center;
       float: right;
@@ -190,7 +190,7 @@ li a {
       color:rgb(84, 128, 252)
   }
   .study {
-      width: 800px;
+      max-width: 100%;
       height: auto;
       margin: 32px 24px;
   }
@@ -313,6 +313,7 @@ li a {
       display: block;
       background-color: white;
       margin-left: 16px;
+      border: black solid 2px;
   }
 
   .learning-grid .photo img {
@@ -324,20 +325,19 @@ li a {
 
   .learning-grid .photo .caption {
       margin-top: 16px;
-      font-size: 36px;
+      font-size: 24px;
       margin-left: 16px;
       margin-bottom: 24px;
   }
 
   .learning-grid .photo span {
-      font-size: 24px;
+      font-size: 18px;
       margin-top: 16px;
   }
 
   /*Thesis Section*/
 
   .thesis-section {
-      margin: 0px;
       background-color: aliceblue;
   }
 
@@ -352,7 +352,7 @@ li a {
   }
 
   .right {
-      display: block;  
+      display: block;
     }
 
   .thesis-header {
@@ -382,8 +382,7 @@ li a {
     width: 500px;
     margin: 16px 0px 16px 16px;
     display: flex;
-    align-items: center;
-    background-color:rgb(110, 109, 109);
+    background-color:rgb(218, 218, 218);
     float: left;
   }
 
@@ -394,6 +393,13 @@ li a {
   .aside img {
       width: 200px;
       height: auto;
+      margin: -4px 0px 0px 10px
+  }
+
+  .aside .img2 {
+      width: 175px !important;
+      height: auto;
+      margin: -4px 0px 0px 10px
   }
   
   .pic-text h2 {
@@ -409,7 +415,25 @@ li a {
 
   .pic-text {
       padding-left: 16px;
+      margin: auto;
   }
+
+  .pic-text2 h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.pic-text2 h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+.pic-text2 {
+    padding-left: 0px;
+    margin: auto 8px;
+}
+
 
   .lwr-container {
       max-width: 99%;
@@ -426,13 +450,55 @@ li a {
       font-family: "Roboto", sans-serif;
       font-size: 18px;
       color:#797979;
+      margin: 0px;
+      margin-left: 18px;
   }
 
-  .lwr-text span {
+  .lwr-text h4 {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     color: #797979;
+    margin-left: 18px;
 }
 
 /*Footer*/
 
+  .footer-container {
+      max-width: 99%;
+      border-top: #5e5d5d solid 1px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;      
+  }
+
+  .foot-txt {
+      grid-column-start: 1;
+      margin: 0px 0px 16px 16px;
+      max-width: 100%;
+  }
+
+  .foot-txt p {
+      font-family: "Roboto", sans-serif;
+      font-size: 18px;
+      color: gray;
+      font-weight: 400;
+      margin-left: 8px;
+  }
+
+  .nav-foot {
+      grid-column-start: 2;
+      width: auto;
+      display: inline;
+      list-style: none;
+      float: right;
+      margin-right: 24px;
+  }
+
+  .nav-foot li {
+      display: inline-block;
+      padding: 18px;
+      color: gray;
+  }
+
+  .nav-foot li a {
+      color: gray;
+  }
